@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" media="screen and (max-width: 800px)" type="text/css" href="css/mobile_footer.css">
+	<style type="text/css">
+		@media screen and (max-width: 800px){
+			article.top div.column1{
+				flex: 100%;
+			}
+			article.top div.column1 img{
+				width: 100%;
+			}
+			article.top div.column2 img{
+				width: 49%;
+			}
+			article.top div.column2{
+				flex: 50%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<table align="center">
+			<tr>
+				<td><img src="images/icons/pokeball.png" id="logo"></td>
+				<td>
+					<ul id="topnav">
+						<li class="nav">
+							<a href="index.html">HOME</a>
+						</li>
+						<li class="nav">
+							<a href="news/news.html">NEWS</a>
+						</li>
+						<li class="nav">
+							<a href="guides/guides.html">GUIDES</a>
+							<img src="images/icons/dropdown.png" alt="">
+							<ul class="dropdown">
+								<a href="guides/raid/raid_guides.html"><li>Raid Guides</li></a>
+								<a href="guides/gym/gym_guides.html"><li>Gym Guides</li></a>
+								<a href="guides/pvp/pvp_guides.html"><li>PvP Guides</li></a>
+							</ul>
+						</li>
+						<li class="nav">
+							<a href="pokedex/pokedex.html">POKÉDEX</a>
+							<img src="images/icons/dropdown.png" alt="">
+							<ul class="dropdown">
+								<a href="pokedex/shiny_pokedex.html"><li>Shiny Pokémon</li></a>
+								<a href="pokedex/nest_pokedex.html"><li>Nesting Pokémon<li></a>
+							</ul>
+						</li>
+						<li class="nav">
+							<a href="items/items.html">ITEMS</a>
+						</li>
+					</ul>
+				</td>
+			</tr>
+		</table>
+	</header>
+	<div class="submenu">
+		<h1 align="center" style="display: block;">POKÉGO INFO</h1></td>
+	</div>
+	<main>
+		<article class="top">
+			<div class=row>
+				<div class="column1">
+					<a href="news/updates/terrakion.html"><img src="news/images/terrakion.jpg" alt="terrakion"></a>
+					<a href="news/events/friend.html"><img src="news/images/friends.jpg" alt="ultra friends"></a>
+				</div>
+				<div class="column2">
+					<a href="guides/gym/defenders.html"><img src="guides/gym/images/blissey.jpg" alt="dancing blissey"></a>
+					<a href="news/events/comm_day.html"><img src="news/images/comm_day.jpg" alt="winter scenery with pokemon"></a>
+					<a href="news/updates/storage.html"><img src="news/images/storage.jpg" alt="pokemon storage icon"></a>
+				</div>
+			</div>
+		</article>
+		<article class="top">
+			<h2>Content Hubs</h2>
+			<div class="row">
+				<div class="column1">
+					<a href="news/news.html"><img src="images/news.jpg" alt="dragonite mailman"></a>
+					<a href="guides/guides.html"><img src="images/guides.jpeg" alt="professor willow with binoculars"></a>
+					<a href="items/items.html"><img src="images/items.jpg" alt="floating pokeballs"></a>
+					<a href="pokedex/pokedex.html"><img src="images/pokedex.jpg" alt="pokedex"></a>
+				</div>
+			</div>
+		</article>
+	</main>
+
+	<footer>
+		<table align="center">
+			<tr>
+				<td style="border-right: solid 2px black; padding-right: 10px; text-align: right;">
+					<h3>About the website</h3>
+					<p>Made by Lyndon Renaud for COMP2707: Advanced Web Design</p>
+				</td>
+				<td style="padding-left: 10px;">
+					<h3>Last Update:</h3>
+					<p>November 30, 2019</p>
+				</td>
+			</tr>
+		</table>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,20 @@
+/*Pokedex table styles*/
+
+table#dex td{
+	border: 2px solid #ffa600;
+	text-align: center;
+	background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+	url("../images/bg3");
+}
+table#dex{
+	border-collapse: collapse;
+}
+table#dex th{
+	border: 2px solid #f95d6a;
+	background-image: linear-gradient(rgba(0,0,0,0.70), rgba(0,0,0,0.70)),
+	url("../images/bg3");
+}
+
+table#dex th, table#dex td{
+	padding: 1px 10px;
+}

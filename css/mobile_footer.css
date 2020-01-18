@@ -1,0 +1,25 @@
+footer p{
+	margin-left: 0;
+	font-size: 0.8em;
+}
+footer{
+	position: relative;
+	border: 3px ridge black;
+}
+
+main{
+	margin-bottom: 0;
+}
+
+article.top div.column1{
+				flex: 100%;
+}
+article.top div.column1 img{
+				width: 100%;
+}
+article.top div.column2 img{
+				width: 49%;
+}
+article.top div.column2{
+				flex: 50%;
+}

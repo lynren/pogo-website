@@ -1,0 +1,19 @@
+main table td{
+	border: 2px solid #ffa600;
+	text-align: center;
+	background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45));
+}
+
+main table th{
+	background-image: linear-gradient(rgba(0,0,0,0.70), rgba(0,0,0,0.70));
+	border: 2px solid #f95d6a;
+}
+
+main table{
+	border-collapse: collapse;
+	margin: 0 10px 10px 10px
+}
+
+main table td img{
+	height: 50px;
+}

@@ -1,0 +1,6 @@
+article img.poster{
+	display: block;
+	float: none;
+	margin: 0 auto;
+	width: 95%;
+}

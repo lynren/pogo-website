@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Target Lock</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../../css/styles.css">
+	<link rel="stylesheet" media="screen and (max-width: 800px)" type="text/css" href="../../css/mobile_footer.css">
+	<style type="text/css">
+		img.poster{
+			width: 650px;
+		}
+		@media screen and (max-width: 700px){
+			img.poster{
+				width: 95%
+			}
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<table align="center">
+			<tr>
+				<td><img src="../../images/icons/pokeball.png" id="logo" alt="pokeball"></td>
+				<td>
+					<ul id="topnav">
+						<li class="nav">
+							<a href="../../index.html">HOME</a>
+						</li>
+						<li class="nav">
+							<a href="../../news/news.html">NEWS</a>
+						</li>
+						<li class="nav">
+							<a href="../guides.html">GUIDES</a>
+							<img src="../../images/icons/dropdown.png" alt="down arrow">
+							<ul class="dropdown">
+								<a href="raid_guides.html"><li>Raid Guides</li></a>
+								<a href="../gym/gym_guides.html"><li>Gym Guides</li></a>
+								<a href="../pvp/pvp_guides.html"><li>PvP Guides</li></a>
+							</ul>
+						</li>
+						<li class="nav">
+							<a href="../../pokedex/pokedex.html">POKÉDEX</a>
+							<img src="../../images/icons/dropdown.png" alt="down arrow">
+							<ul class="dropdown">
+								<a href="../../pokedex/shiny_pokedex.html"><li>Shiny Pokémon</li></a>
+								<a href="../../pokedex/nest_pokedex.html"><li>Nesting Pokémon<li></a>
+							</ul>
+						</li>
+						<li class="nav">
+							<a href="../../items/items.html">ITEMS</a>
+						</li>
+					</ul>
+				</td>
+			</tr>
+		</table>
+	</header>
+
+	<div class="submenu">
+		<table style="display: inline;">
+			<tr>
+				<td><img class="sub_icon" src="images/icons/masterball.png" alt="masterball" /></td>
+				<td><h1 align="center">TARGET LOCK METHOD</h1></td>
+			</tr>
+		</table>
+	</div>
+
+	<main>
+		<div class="back" style="clear: right;">
+				<a href="../guides.html"><img src="../../images/icons/back.svg" alt="back arrow">Guides</a>
+		</div>
+		<article>
+			<h2>Throwing Statistics</h2>
+			<img class="poster center" src="images/throws.jpg" alt="throw accuracy">
+			<figcaption><i>Fig. 1: Throw Accuracy</i></figcaption>
+			<p>As shown in the above image, there are three levels of accuracy when throwing a Pokéball. The target circle starts off big, but as you hold down on the screen, the target shrinks. Once the target shrinks to nothing, it returns to its full size and the cycle repeats. These accuracy levels affect the chances of catching a Pokémon. This is called the <i>Throw Bonus</i>. In addition to the three levels, there is a bonus for throwing curveballs. The curveball bonus can stack with the throw accuracy bonus. Using data gathered by <a href="https://gamepress.gg/pokemongo/node/15216" target="blank">gamepress</a>, we arrive at the following table of accuracy level and catch rate multiplier pairs:</p>
+			<table class="text center">
+				<tr>
+					<th>Accuracy Level</th>
+					<th>Multiplier</th>
+				</tr>
+				<tr>
+					<td>Nice</td>
+					<td>1.15</td>
+				</tr>
+				<tr>
+					<td>Great</td>
+					<td>1.5</td>
+				</tr>
+				<tr>
+					<td>Excellent</td>
+					<td>1.85</td>
+				</tr>
+				<tr>
+					<td>Curveball</td>
+					<td>1.7</td>
+				</tr>
+			</table>
+			<p>As we can see from the table above, we have a maximum <b>3.55 multiplier</b> for throwing an excellent curveball. It would seem intuitive to throw excellent curveballs 100% of the time, but Figure 1 shows us that an excellent throw is hard to pull off since the target is very small. Furthermore, the Pokémon can jump or attack at random, blocking the Pokéball.</p>
+		</article>
+		<article>
+			<h2>The Target Lock</h2>
+			<p>Now, we've shown why an excellent curveball is hard to pull off, but there is a method which makes doing so easier. The target shrinks at a constant rate which means getting the target into "excellent" range is easy. The only randomness which we face is when the Pokémon jumps/attacks. To combat this randomness, we only throw a Pokéball when the target is in excellent range and the Pokémon cannot jump/attack. This may seem hard to setup but due to the way Pokémon Go is made, it is actually very simple. To use the target lock method, follow these steps in order:</p>
+			<ol>
+				<li>Hold down on the screen until target is in excellent range, then let go of the screen.</li>
+				<li>Wait for the Pokémon to attack.</li>
+				<li>Right before the attack animation ends, throw the Pokéball at the target.</li>
+			</ol>
+			<p>This method works because of two things. First, the target only shrinks when you are holding down on the screen. Once you let go of the screen, the target no longer shrinks, but stays the same size from where you had it last. Secondly, when a Pokémon attacks, there is a half second window where it cannot jump/attack once the attack animation ends. This small window is the perfect time to throw a Pokéball. Since we saved the target in the excellent range, we meet the two conditions of an easy excellent curveball.</p>
+			<div class="back" style="clear: right;">
+				<a href="../guides.html"><img src="../../images/icons/back.svg" alt="back arrow">Guides</a>
+		</div>
+		</article>
+	</main>
+
+	<footer>
+		<table align="center">
+			<tr>
+				<td style="border-right: solid 2px black; padding-right: 10px; text-align: right;">
+					<h3>About the website</h3>
+					<p>Made by Lyndon Renaud for COMP2707: Advanced Web Design</p>
+				</td>
+				<td style="padding-left: 10px;">
+					<h3>Last Update:</h3>
+					<p>November 30, 2019</p>
+				</td>
+			</tr>
+		</table>
+	</footer>
+</body>
+<script type="text/javascript" src="../../js/showMenu.js"></script>
+</html>
